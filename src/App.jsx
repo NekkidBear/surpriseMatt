@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import SurpriseButton from './SurpriseButton';
+import SurpriseButton from './Surprise Button/SurpriseButton';
 
 function App() {
   const [showSurprise, setShowSurprise] = useState(false);
