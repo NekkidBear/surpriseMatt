@@ -16,7 +16,8 @@
     "react-dom": "^18.2.0",
     "react-floating-balloons": "^3.0.1",
     "react-lottie": "^1.2.4",
-    "react-sound": "^1.2.0"
+    "react-sound": "^1.2.0",
+    "react-spotify-embed": "^2.0.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
