@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SurpriseButton from './Surprise Button/SurpriseButton';
+import BirthdaySurprise from './Birthday Surprise/BirthdaySurprise'
 
 function App() {
   const [showSurprise, setShowSurprise] = useState(false);
