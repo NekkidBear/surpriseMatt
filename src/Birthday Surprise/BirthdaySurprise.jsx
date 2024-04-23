@@ -12,14 +12,14 @@ function BirthdaySurprise() {
         alt="Wish Bear dancing the 'Floss' dance from Fortnite."
       />
       <h1>Happy Birthday!</h1>
-      <ReactFloatingBalloons
+      {/* <ReactFloatingBalloons
         count={38}
         msgText="Happy Birthday!"
         colors={["yellow", "green", "blue", "red", "orange", "purple"]}
         popVolumeLevel={0.1}
         loop="true"
         hangOnTop="true"
-      />
+      /> */}
     </div>
   );
 }
