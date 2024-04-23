@@ -13,14 +13,14 @@ function BirthdaySurprise() {
       />
       <Spotify wide link="https://open.spotify.com/playlist/2a3U47HXjEiaI5YA3LrUXf?si=50b7f21c3f144b1c" />
       
-      {/* <ReactFloatingBalloons
+      <ReactFloatingBalloons
         count={38}
         msgText="Happy Birthday!"
         colors={["yellow", "green", "blue", "red", "orange", "purple"]}
         popVolumeLevel={0.1}
         loop="true"
         hangOnTop="true"
-      /> */}
+      />
     </div>
   );
 }
