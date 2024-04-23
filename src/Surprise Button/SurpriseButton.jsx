@@ -1,11 +1,11 @@
-import React from 'react';
-import './SurpriseButton.css'
+import React from "react";
+import "./SurpriseButton.css";
 
 function SurpriseButton({ onClick }) {
   return (
-    <button onClick={onClick}>
-      Surprise!
-    </button>
+    <section className="centered">
+      <button onClick={onClick}>Surprise!</button>
+    </section>
   );
 }
 
