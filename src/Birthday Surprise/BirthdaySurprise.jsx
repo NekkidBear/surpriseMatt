@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { ReactFloatingBalloons } from "react-floating-balloons";
 import "./BirthdaySurprise.css";
 import happyBirthdayWav from "../assets/audio/Happy Birthday.wav";

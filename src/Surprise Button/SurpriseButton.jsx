@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 import "./SurpriseButton.css";
 
 function SurpriseButton({ onClick }) {
@@ -8,5 +8,9 @@ function SurpriseButton({ onClick }) {
     </section>
   );
 }
+
+SurpriseButton.propTypes = {
+  onClick: PropTypes.func.isRequired,
+};
 
 export default SurpriseButton;
