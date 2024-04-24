@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'CareBearsFamily';
-    src: url(../assets/fonts/Care\ Bears\ Font.ttf);
-}
+    src: url("../assets/fonts/Care Bears Font.ttf");
+  }
 
 :root {
     --mainColor: #7fffd4;
@@ -11,8 +11,29 @@
     --accent4: #ffb800;
 
 }
-
+* {
+    background-color: transparent;
+    color: var(--accent3);
+    text-align: center;
+}
 h1, h2{
     font-family: 'CareBearsFamily', "Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  
+  .dolphin {
+    grid-row: 1 /span 6;
+    grid-column: 1 / span 6; /* This will make the dolphin images span all 6 columns */
+  }
+  
+  .bear {
+    grid-row: 2 / span 4; /* This will make the bear image start at the second row and span the next 5 rows */
+    grid-column: 2 / span 4; /* This will make the bear image span all 6 columns */
+  }
