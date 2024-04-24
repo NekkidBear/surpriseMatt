@@ -17,3 +17,7 @@
     color: var(--accent4);
     font-family: 'CareBearsFamily';
   }
+
+  .beginningH1 {
+    font-size: 62px;
+  }
