@@ -26,14 +26,18 @@ h1, h2{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
   }
   
   .dolphin {
-    grid-row: 1 /span 6;
-    grid-column: 1 / span 6; /* This will make the dolphin images span all 6 columns */
+    /* styles for the dolphin images */
+    width: 100%; /* Make the dolphin images fill the cell */
+    height: 100%; /* Make the dolphin images fill the cell */
+    object-fit: contain; /* Preserve aspect ratio and fit the image within the cell */
   }
   
   .bear {
-    grid-row: 2 / span 4; /* This will make the bear image start at the second row and span the next 5 rows */
-    grid-column: 2 / span 4; /* This will make the bear image span all 6 columns */
+    grid-row: 2 /6; /* This will make the bear image start at the second row and span the next 5 rows */
+    grid-column: 2/ 6; /* This will make the bear image span all 6 columns */
+    margin-right: 10px;
   }
