@@ -15,11 +15,13 @@ function BirthdaySurprise() {
   };
 
   return (
-    <div>
+    <div className="page-container">
+    <header>
       <h1>Happy Birthday, Matt!</h1>
       <h2>from: Biscayne Cohort</h2>
+    </header>
 
-      <div className="container">
+      <div className="image-container">
         <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
         <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
         <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />

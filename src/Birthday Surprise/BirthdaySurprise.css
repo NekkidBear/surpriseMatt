@@ -2,42 +2,53 @@
     font-family: 'CareBearsFamily';
     src: url("../assets/fonts/Care Bears Font.ttf");
   }
-
-:root {
+  
+  :root {
     --mainColor: #7fffd4;
     --accent1: #9d75cb;
     --accent2: #a657ae;
     --accent3: #8c1a6a;
     --accent4: #ffb800;
-
-}
-* {
+  }
+  
+  * {
     background-color: transparent;
     color: var(--accent3);
     text-align: center;
-}
-h1, h2{
+  }
+  
+  .page-container {
+    background-color: var(--mainColor);
+  }
+  
+  header {
+    background-color: var(--accent1);
+    width: 100%
+  }
+  
+  h1, h2 {
     font-family: 'CareBearsFamily', "Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.container {
+  }
+  
+  .image-container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
     gap: 10px;
+    margin: 0 30px;
   }
-  
-  .dolphin {
-    /* styles for the dolphin images */
-    width: 100%; /* Make the dolphin images fill the cell */
-    height: 100%; /* Make the dolphin images fill the cell */
-    object-fit: contain; /* Preserve aspect ratio and fit the image within the cell */
+
+  .dolphin, .bear {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
   }
   
   .bear {
-    grid-row: 2 /6; /* This will make the bear image start at the second row and span the next 5 rows */
-    grid-column: 2/ 6; /* This will make the bear image span all 6 columns */
-    margin-right: 10px;
+    grid-row: 2 / 6;
+    grid-column: 2 / 6;
+    padding-right: 10px;
   }
