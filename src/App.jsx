@@ -11,6 +11,7 @@ function App() {
 
   return (
     <div className="App">
+      <h1>{showSurprise ? '' : 'To: Matt'}</h1>
       {!showSurprise && <SurpriseButton onClick={handleClick} />}
       {showSurprise && <BirthdaySurprise />}
     </div>
