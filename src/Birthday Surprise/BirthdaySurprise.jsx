@@ -19,7 +19,8 @@ function BirthdaySurprise() {
 
   return (
     <div>
-      <h1>Happy Birthday!</h1>
+      <h1>Happy Birthday, Matt!</h1>
+      <h2>from: Biscayne Cohort</h2>
       <img src={dancingDolphin} alt="An image of a pixel-art style dolphin dancing" />
       <img src={dancingBear} alt="Wish Bear dancing the 'Floss' dance from Fortnite." />
       <img src={dancingDolphin} alt="An image of a pixel-art style dolphin dancing" />
@@ -27,7 +28,7 @@ function BirthdaySurprise() {
       <audio controls src={audioFiles[currentTrack]} autoPlay onEnded={handleEnded} />
       <ReactFloatingBalloons
         count={10}
-        msgText="Happy Birthday!"
+        msgText="Happy Birthday"
         colors={["yellow", "green", "blue", "red", "orange", "purple"]}
         popVolumeLevel={0.1}
         loop="true"
