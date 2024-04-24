@@ -19,8 +19,14 @@
   
   .page-container {
     background-color: var(--mainColor);
+    
   }
   
+  body {
+    text-align: center;
+   
+  }
+
   header {
     background-color: var(--accent1);
     width: 100%
@@ -37,11 +43,15 @@
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    gap: 10px;
     margin: 0 30px;
+    height: 100vw;
+    width: auto;
+    margin: 0 20%;
   }
 
   .dolphin, .bear {
+    margin: 0;
+    padding: 0;
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
@@ -50,5 +60,6 @@
   .bear {
     grid-row: 2 / 6;
     grid-column: 2 / 6;
+    width: 100%;
     
   }

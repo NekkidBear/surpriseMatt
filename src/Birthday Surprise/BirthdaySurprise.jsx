@@ -15,53 +15,53 @@ function BirthdaySurprise() {
   };
 
   return (
-    <div className="page-container">
-    <header>
-      <h1>Happy Birthday, Matt!</h1>
-      <h2>from: Biscayne Cohort</h2>
-    </header>
+    <body>
+      <div className="page-container">
+        <header>
+          <h1>Happy Birthday, Matt!</h1>
+          <h2>from: Biscayne Cohort</h2>
+        </header>
 
-      <div className="image-container">
-        <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
-        <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
-        <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
-        <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
-        <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
-        <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
-        <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
-        <img className="bear" src={dancingBear} alt="Dancing Bear" />
-        <img className="bear" src={dancingBear} alt="Dancing Bear" />
-        <img className="bear" src={dancingBear} alt="Dancing Bear" />
-        <img className="bear" src={dancingBear} alt="Dancing Bear" />
-        <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
-        <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
-        <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
-        <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
-        <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
-        <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
-        <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
-        <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
-        <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
-        <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
-        <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
-        <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
-        <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
-       
+        <div className="image-container">
+          <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
+          <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
+          <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
+          <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
+          <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
+          <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
+          <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
+          <img className="bear" src={dancingBear} alt="Dancing Bear" />
+          <img className="bear" src={dancingBear} alt="Dancing Bear" />
+          <img className="bear" src={dancingBear} alt="Dancing Bear" />
+          <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
+          <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
+          <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
+          <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
+          <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
+          <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
+          <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
+          <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
+          <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
+          <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
+          <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
+          <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
+          <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
+        </div>
+        <audio
+          controls
+          src={audioFiles[currentTrack]}
+          autoPlay
+          onEnded={handleEnded}
+        />
+        <ReactFloatingBalloons
+          count={10}
+          msgText="Happy Birthday"
+          colors={["yellow", "green", "blue", "red", "orange", "purple"]}
+          popVolumeLevel={0.1}
+          loop="true"
+        />
       </div>
-      <audio
-        controls
-        src={audioFiles[currentTrack]}
-        autoPlay
-        onEnded={handleEnded}
-      />
-      <ReactFloatingBalloons
-        count={10}
-        msgText="Happy Birthday"
-        colors={["yellow", "green", "blue", "red", "orange", "purple"]}
-        popVolumeLevel={0.1}
-        loop="true"
-      />
-    </div>
+    </body>
   );
 }
 
