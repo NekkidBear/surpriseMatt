@@ -1,25 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import { ReactFloatingBalloons } from "react-floating-balloons";
 import "./BirthdaySurprise.css";
-import { Spotify } from "react-spotify-embed";
+import happyBirthdayWav from "../assets/audio/Happy Birthday.wav";
+import happyBirthdayRemix from "../assets/audio/Aer0naught - Happy Birthday! (8-Bit Remix).mp3";
+import dancingDolphin from '../assets/images/Dancing Dolphin Gif.gif';
+import dancingBear from '../assets/images/wish_bear_dancing_the_fortnite_floss_dance_emote_by_giromcalica_dctxi0u.gif';
 
 function BirthdaySurprise() {
+  const audioFiles = [
+    happyBirthdayWav,
+    happyBirthdayRemix
+  ];
+  const [currentTrack, setCurrentTrack] = useState(0);
+
+  const handleEnded = () => {
+    setCurrentTrack((currentTrack + 1) % audioFiles.length);
+  };
+
   return (
     <div>
-    <h1>Happy Birthday!</h1>
-    <img
-        src="../assets/images/wish_bear_dancing_the_fortnite_floss_dance_emote_by_giromcalica_dctxi0u.gif"
-        alt="Wish Bear dancing the 'Floss' dance from Fortnite."
-      />
-      <Spotify wide link="https://open.spotify.com/playlist/2a3U47HXjEiaI5YA3LrUXf?si=50b7f21c3f144b1c" />
-      
+      <h1>Happy Birthday!</h1>
+      <img src={dancingDolphin} alt="An image of a pixel-art style dolphin dancing" />
+      <img src={dancingBear} alt="Wish Bear dancing the 'Floss' dance from Fortnite." />
+      <img src={dancingDolphin} alt="An image of a pixel-art style dolphin dancing" />
+
+      <audio controls src={audioFiles[currentTrack]} autoPlay onEnded={handleEnded} />
       <ReactFloatingBalloons
-        count={38}
+        count={10}
         msgText="Happy Birthday!"
         colors={["yellow", "green", "blue", "red", "orange", "purple"]}
         popVolumeLevel={0.1}
         loop="true"
-        hangOnTop="true"
       />
     </div>
   );

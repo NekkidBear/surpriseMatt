@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'CareBearsFamily';
+    src: url(../assets/fonts/Care\ Bears\ Font.ttf);
+}
+
+:root {
+    --mainColor: #7fffd4;
+    --accent1: #9d75cb;
+    --accent2: #a657ae;
+    --accent3: #8c1a6a;
+    --accent4: #ffb800;
+
+}
+
+h1 {
+    font-family: 'CareBearsFamily', arial-rounded, 
+}
