@@ -1,4 +1,12 @@
+@font-face {
+  font-family: 'CareBearsFamily';
+  src: url("../assets/fonts/Care Bears Font.ttf");
+}
+
 :root {
+  --mainColor: #7fffd4;
+  --accent1: #9d75cb;
+  --accent2: #a657ae;
   --accent3: #8c1a6a;
   --accent4: #ffb800;
 }
@@ -12,9 +20,15 @@
   }
 
 button {
+  font-family: 'CareBearsFamily';
   background-color: var(--accent3);
-  border: 1px solid var(--accent3);
+  border: 1px solid var(--accent4);
   border-radius: 50%;
   color: var(--accent4);
   font-size: 2em;
+  padding: 1em;
+}
+
+body {
+  background-color: var(--accent2);
 }
