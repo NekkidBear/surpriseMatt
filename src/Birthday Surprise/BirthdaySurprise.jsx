@@ -47,7 +47,7 @@ function BirthdaySurprise() {
           <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
           <img className="dolphin" src={dancingDolphin} alt="Dancing Dolphin" />
         </div>
-        <audio
+        <audio className="audioControls"
           controls
           src={audioFiles[currentTrack]}
           autoPlay

@@ -42,11 +42,11 @@
   .image-container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(12, 1fr);
     margin: 0 30px;
     height: 100vw;
     width: auto;
-    margin: 0 20%;
+    margin: 20%;
   }
 
   .dolphin, .bear {
@@ -61,5 +61,11 @@
     grid-row: 2 / 6;
     grid-column: 2 / 6;
     width: 100%;
-    
+    margin-top: 10px;
+  }
+
+  .audioControls {
+    position: absolute;
+    top: 200px;
+    left: 10px;
   }
