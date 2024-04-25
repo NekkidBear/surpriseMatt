@@ -4,7 +4,7 @@ import groupScreenshot from '../assets/images/BiscayneGroupShot.jpg'; // replace
 
 function ToFromTag() {
   return (
-    <div>
+    <div className='toFromTag'>
       <h1 className='beginningH1'>To: Matt</h1>
       <br />
       <img src={groupScreenshot} alt="Group screenshot" />
