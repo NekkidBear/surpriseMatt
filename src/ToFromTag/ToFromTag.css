@@ -1,7 +1,14 @@
 .toFromTag {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+    max-height: 100%;
+    box-sizing: border-box;
+  }
+  
+  .toFromTag img {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+  }

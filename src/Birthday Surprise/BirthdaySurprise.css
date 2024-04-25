@@ -44,10 +44,9 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(12, 1fr);
     margin: 0 30px;
-    height: 100vw;
-    width: auto;
-    margin: 20%;
-  }
+    max-height: 70vh;
+    max-width: 100%;
+    }
 
   .dolphin, .bear {
     margin: 0;
